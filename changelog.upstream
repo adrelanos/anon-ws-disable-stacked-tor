@@ -1,3 +1,21 @@
+commit 5dd547e93b6d26b96f56a134b8904b513f988765
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 7 06:16:32 2018 -0500
+
+    fix
+
+commit 8a364762966d3e390cb3673d8c8f98ffda5996a0
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 7 06:13:54 2018 -0500
+
+    parse /usr/local/etc//anon-ws-disable-stacked-tor.d/*.conf
+
+commit 3dcbe81a7d8c85871193e04e214b0360fcfd183a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Aug 27 15:52:59 2018 +0000
+
+    bumped changelog version
+
 commit 12284612749bedc267ccbdc6ed01e1f5a027d9a2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Aug 21 05:17:53 2018 +0800
