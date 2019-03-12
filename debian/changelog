@@ -1,3 +1,9 @@
+anon-ws-disable-stacked-tor (3:3.7-1) unstable; urgency=medium
+
+  * New upstream version (local package).
+
+ -- Patrick Schleizer <adrelanos@riseup.net>  Tue, 12 Mar 2019 11:18:36 +0000
+
 anon-ws-disable-stacked-tor (3:3.6-1) unstable; urgency=medium
 
   * New upstream version (local package).
