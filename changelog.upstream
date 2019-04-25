@@ -1,3 +1,15 @@
+commit 23f852368df6be6ed2dd1937363682df76ce81b2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 25 16:26:26 2019 -0400
+
+    fix port / fix for bisq
+
+commit 4b5a9330e1d446d026bfc1976f91f7b3d0515ffe
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Apr 6 16:08:13 2019 +0000
+
+    bumped changelog version
+
 commit 128e2312bf58a5c1cea3eecd74d1fa0a1a194b51
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Apr 6 15:17:09 2019 +0000
