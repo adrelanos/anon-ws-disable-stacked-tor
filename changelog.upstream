@@ -1,3 +1,17 @@
+commit e7113a224b319806ee7d5d8fc9c14019c4fe6ddb
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 30 21:07:18 2019 -0400
+
+    re-run usr/lib/anon-ws-disable-stacked-tor/systemd-unit-files-generator
+    
+    fix port / fix for bisq
+
+commit a7166ba7103d445fb032aa40b55a2b1ff32a010a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 25 20:44:53 2019 +0000
+
+    bumped changelog version
+
 commit 23f852368df6be6ed2dd1937363682df76ce81b2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 25 16:26:26 2019 -0400
