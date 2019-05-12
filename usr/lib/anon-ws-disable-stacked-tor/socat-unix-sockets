@@ -6,7 +6,7 @@
 set -e
 
 ## Provides variable $GATEWAY_IP so it can be used by `source`d config snippets.
-eval $(/usr/lib/anon-shared-helper-scripts/settings_echo)
+eval $(/usr/lib/helper-scripts/settings_echo)
 
 shopt -s nullglob
 for i in /etc/anon-ws-disable-stacked-tor.d/*.conf /rw/anon-ws-disable-stacked-tor.d/*.conf /usr/local/etc/anon-ws-disable-stacked-tor.d/*.conf; do
