@@ -1,3 +1,21 @@
+commit c3064496167e95033ff11b267303b9cd35b06dad
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 12 02:58:42 2019 -0400
+
+    update path to pre.bsh
+
+commit 8b81ceb9b57ec9cf9b8cb77a3d5bed44763964e6
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun May 12 02:50:14 2019 -0400
+
+    anon-shared-helper-scripts -> helper-scripts
+
+commit 20f08fffb6406d4c46b58ed91157fa2989256a96
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri May 3 11:16:07 2019 +0000
+
+    bumped changelog version
+
 commit b16716901c4844ae83a96733e304e79e5762ab26
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri May 3 10:56:51 2019 +0000
