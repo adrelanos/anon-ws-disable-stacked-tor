@@ -161,7 +161,12 @@ PrivateTmp=yes" > "./lib/systemd/system/anon-ws-disable-stacked-tor_autogen_${fi
    if [ "$system_run" = "true" ]; then
       systemctl --system daemon-reload
       systemctl enable "anon-ws-disable-stacked-tor_autogen_${file_name}.socket"
-      systemctl start "anon-ws-disable-stacked-tor_autogen_${file_name}.socket"
+
+      ## 'restart' rather than 'start' required to support running this script
+      ## during runtime due to the following.
+      ##
+      ## Jun 06 05:38:49 host systemd[1]: anon-ws-disable-stacked-tor_autogen__var_run_tor_socks.socket: Socket unit configuration has changed while unit has been running, no open socket file descriptor left. The socket unit is not functional until restarted.
+      systemctl restart "anon-ws-disable-stacked-tor_autogen_${file_name}.socket"
    fi
 
    ## Append lintian override for each auto generated systemd unit file.
