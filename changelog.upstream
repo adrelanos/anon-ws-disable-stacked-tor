@@ -1,3 +1,24 @@
+commit 64df319c6a165ad8dc7bd3e2a4a45841660cc485
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 8 00:05:29 2019 -0400
+
+    fix debian/watch lintian warning debian-watch-contains-dh_make-template
+
+commit 1f7bf8ff3af2548cb735ab9450c7395d9d4065cf
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Jun 6 01:43:06 2019 -0400
+
+    'restart' rather than 'start' required to support running this script
+    during runtime due to the following.
+    
+    Jun 06 05:38:49 host systemd[1]: anon-ws-disable-stacked-tor_autogen__var_run_tor_socks.socket: Socket unit configuration has changed while unit has been running, no open socket file descriptor left. The socket unit is not functional until restarted.
+
+commit 4bc1c2c8165a1a160116f15bf841b88f3b2587fa
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri May 24 20:09:47 2019 +0000
+
+    bumped changelog version
+
 commit 66ae2f1aefe129ac9e5d524ac8f5adbf9024476a
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Fri May 24 12:28:54 2019 -0400
