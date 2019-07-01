@@ -41,7 +41,7 @@ do
             break
             ;;
          -*)
-            true "$SCRIPTNAME unknown option: $1" >&2
+            true "$0 unknown option: $1" >&2
             shift
             continue
             ;;
