@@ -19,6 +19,13 @@ set -e
 #exec 5>&1 1>> /home/user/toroutput
 #exec 6>&2 2>> /home/user/toroutput
 
+file_name=""
+DataDirectory=""
+ControlSocket=""
+CookieAuthFile=""
+SocksPort=""
+socat_pid=""
+
 ## Thanks to:
 ## http://mywiki.wooledge.org/BashFAQ/035
 
