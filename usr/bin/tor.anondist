@@ -7,9 +7,12 @@ exit_handler() {
    if [ ! "$socat_pid" = "" ]; then
       kill -s sigterm "$socat_pid" || true
    fi
-   if [ ! "$DataDirectory" = "" ]; then
-      rm -rf "$DataDirectory"
-   fi
+   ## OnionShare will do that after Tor got killed by OnionShare.
+   ## So we will not do it here, otherwise OnionShare would show an error
+   ## during shutdown.
+   #if [ ! "$DataDirectory" = "" ]; then
+      #rm -rf "$DataDirectory"
+   #fi
 }
 
 set -e
