@@ -7,6 +7,9 @@ exit_handler() {
    if [ ! "$socat_pid" = "" ]; then
       kill -s sigterm "$socat_pid" || true
    fi
+   if [ ! "$DataDirectory" = "" ]; then
+      rm -rf "$DataDirectory"
+   fi
 }
 
 set -e
