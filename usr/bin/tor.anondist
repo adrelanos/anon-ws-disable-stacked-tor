@@ -3,7 +3,16 @@
 ## Copyright (C) 2017 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
+exit_handler() {
+   if [ ! "$socat_pid" = "" ]; then
+      kill -s sigterm "$socat_pid" || true
+   fi
+}
+
+set -e
+
 ## Debugging.
+#set -x
 #exec 5>&1 1>> /home/user/toroutput
 #exec 6>&2 2>> /home/user/toroutput
 
@@ -40,9 +49,19 @@ if [ ! "$file_name" = "" ]; then
    DataDirectory="$(cat "$file_name" | grep DataDirectory | awk '{print $2}')"
    ControlSocket="$(cat "$file_name" | grep ControlSocket | awk '{print $2}')"
    CookieAuthFile="$(cat "$file_name" | grep CookieAuthFile | awk '{print $2}')"
+   SocksPort="$(cat "$file_name" | grep SocksPort | awk '{print $2}')"
+   ## Example SocksPort:
+   ## SocksPort=24883
+   SocksPort=${SocksPort#"SocksPort="}
+
    mkdir -p "$DataDirectory"
    ln -s /var/run/tor/control "$ControlSocket"
    ln -s /var/run/tor/control.authcookie "$CookieAuthFile"
+
+   trap exit_handler EXIT
+
+   socat TCP-LISTEN:"$SocksPort",fork,bind=127.0.0.1 TCP:127.0.0.1:9050 &
+   socat_pid="$!"
 fi
 
 sleep infinity &
