@@ -1,3 +1,53 @@
+commit 35198acb7a4e2ad05cafe7a118ec4c0eabb4901e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jul 1 10:03:21 2019 +0000
+
+    actually do not cleanup DataDirectory; comment
+    
+    https://github.com/micahflee/onionshare/issues/829#issuecomment-507190839
+
+commit 89f3a4ec5996903812750b1442bca9ea44c7020d
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jul 1 10:00:56 2019 +0000
+
+    minor
+
+commit 1736d5adda520afed9f036e460d329e8afb09312
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jul 1 10:00:29 2019 +0000
+
+    private variables
+    
+    https://github.com/micahflee/onionshare/issues/829#issuecomment-507190839
+
+commit 7b10c4923e566283c8e10d92e27e036509019d88
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jul 1 09:59:08 2019 +0000
+
+    cleanup DataDirectory
+    
+    https://github.com/micahflee/onionshare/issues/829#issuecomment-507190839
+
+commit c3f38be312088470794b7ffdc7c3a25c6594f3f3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jul 1 09:52:16 2019 +0000
+
+    add also SocksPort support for OnionShare "bundled Tor"
+    
+    https://github.com/micahflee/onionshare/issues/829#issuecomment-507190839
+
+commit 6cbc889b37648b8b8cae8193c675b3c5aef9e55f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jul 1 09:26:22 2019 +0000
+
+    add support for OnionShare "bundled Tor"
+
+commit 5755d1f470c76bd91f287028ad133e4345792b89
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Jun 8 10:12:48 2019 +0000
+
+    bumped changelog version
+
 commit 64df319c6a165ad8dc7bd3e2a4a45841660cc485
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Jun 8 00:05:29 2019 -0400
