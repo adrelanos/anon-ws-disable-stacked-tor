@@ -1,3 +1,15 @@
+commit de8c9ec29dba604941872d4630530d0d07733153
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jul 31 03:06:30 2019 -0400
+
+    /var/run -> /run
+
+commit 50c19ce5ffd75c98c3c5ef2c488e145488e9e5ca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Jul 1 15:22:33 2019 +0000
+
+    bumped changelog version
+
 commit 35198acb7a4e2ad05cafe7a118ec4c0eabb4901e
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jul 1 10:03:21 2019 +0000
@@ -830,7 +842,7 @@ commit 28dc66f7a7719d8211acb1f920244bf47967cec2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Sep 14 19:50:32 2016 +0000
 
-    also add functional /run/tor/control_auth_cookie and /var/lib/tor/control_auth_cookie
+    also add functional /var/run/tor/control_auth_cookie and /var/lib/tor/control_auth_cookie
 
 commit 7f40e2fa34b905c8f062d353815b76d08f1281d7
 Author: Patrick Schleizer <adrelanos@riseup.net>
@@ -838,13 +850,13 @@ Date:   Wed Sep 14 19:44:31 2016 +0000
 
     add support for python-stem Tor Control Socket based authentication
     
-    by adding a functional /run/tor/control.authcookie
+    by adding a functional /var/run/tor/control.authcookie
 
 commit 223ad3f5a2cf834fcd9ecd10a9954f02b20645c1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Sep 14 18:45:19 2016 +0000
 
-    also create and forward /run/tor/control
+    also create and forward /var/run/tor/control
 
 commit d476f544eaa516d2bddf39fbfb4956a3424ef1c2
 Author: Patrick Schleizer <adrelanos@riseup.net>
@@ -856,7 +868,7 @@ commit 73c3620ef970722bbfa974327e2e9387b72c3db3
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Sep 14 18:35:23 2016 +0000
 
-    fix, make sure /run/anon-ws-disable-stacked-tor exists
+    fix, make sure /var/run/anon-ws-disable-stacked-tor exists
 
 commit bdca9c8d9e1b195e2e5bb682bef33e4020df3b60
 Author: Patrick Schleizer <adrelanos@riseup.net>
@@ -880,7 +892,7 @@ commit eda6e3221fd3c254892ab6a362c91a7f882e0d24
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Sep 13 20:40:01 2016 +0000
 
-    forward /run/tor/socks to Whonix-Gateway
+    forward /var/run/tor/socks to Whonix-Gateway
 
 commit ad86ce9d4285c5f749697c0d3bf34c37ac39eb2f
 Author: Patrick Schleizer <adrelanos@riseup.net>
@@ -1049,11 +1061,11 @@ Date:   Thu Aug 20 03:04:39 2015 +0000
     Try to cope up with planned changes by the Tor Browser Bundle (TBB) developers. Try keeping Tor Browser being able to connect while preventing Tor over Tor.
     The Tor Project (TPO) plans ( https://trac.torproject.org/projects/tor/ticket/14270 ) to modify TBB to use unix domain sockets (Tor SocksSocket option) instead of TCP to talk to Tor.
     To make things worse, currently the environment variables TOR_SOCKS_HOST and TOR_SOCKS_PORT are broken. ( upstream bug report: https://trac.torproject.org/projects/tor/ticket/8336 )
-    Therefore creating unix domain sockets using socat in folder /run/anon-ws-disable-stacked-tor that are forwarded rinetd on localhost which forwards them to the gateway.
+    Therefore creating unix domain sockets using socat in folder /var/run/anon-ws-disable-stacked-tor that are forwarded rinetd on localhost which forwards them to the gateway.
     (Not directly forwarding those to the gateway to make the Qubes implementation simpler. This way no IP replacement is required.)
     Optimistically setting environment variables to configure TBB in hope that those are later implemented by TPO.
-    export TOR_PRE_EXIST_UNIX_SOCKET_SOCKS="/run/anon-ws-disable-stacked-tor/127.0.0.1_9150.sock"
-    export TOR_PRE_EXIST_UNIX_SOCKET_CONTROL="/run/anon-ws-disable-stacked-tor/127.0.0.1_9151.sock"
+    export TOR_PRE_EXIST_UNIX_SOCKET_SOCKS="/var/run/anon-ws-disable-stacked-tor/127.0.0.1_9150.sock"
+    export TOR_PRE_EXIST_UNIX_SOCKET_CONTROL="/var/run/anon-ws-disable-stacked-tor/127.0.0.1_9151.sock"
     As long it is ignored, there is no harm.
     And once Tor Browser supports it, chances are better that it is still able to make connections See also:
     - https://trac.torproject.org/projects/tor/ticket/14272#comment:3
