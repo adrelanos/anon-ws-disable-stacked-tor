@@ -6,7 +6,7 @@
 [Unit]
 Description=redirect 127.0.0.1:9051 to Whonix-Gateway port 9051
 Documentation=https://www.whonix.org/wiki/Dev/anon-ws-disable-stacked-tor
-ConditionPathExists=!/var/run/qubes/this-is-templatevm
+ConditionPathExists=!/run/qubes/this-is-templatevm
 
 [Socket]
 ListenStream=127.0.0.1:9051

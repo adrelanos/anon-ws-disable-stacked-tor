@@ -40,12 +40,12 @@ export TOR_SKIP_LAUNCH=1
 ## domain socket file instead of creating its own one to avoid Tor over Tor and
 ## to keep it being able to connect.
 ## systemd-socket-proxyd is being used for creation of unix domain socket file
-## /var/run/anon-ws-disable-stacked-tor/127.0.0.1_9150.sock and forwarding it to
+## /run/anon-ws-disable-stacked-tor/127.0.0.1_9150.sock and forwarding it to
 ## to Whonix-Gateway port 9150.
 ## https://phabricator.whonix.org/T192
 ## https://trac.torproject.org/projects/tor/ticket/20111#comment:5
-export TOR_SOCKS_IPC_PATH="/var/run/anon-ws-disable-stacked-tor/127.0.0.1_9150.sock"
-export TOR_CONTROL_IPC_PATH="/var/run/anon-ws-disable-stacked-tor/127.0.0.1_9151.sock"
+export TOR_SOCKS_IPC_PATH="/run/anon-ws-disable-stacked-tor/127.0.0.1_9150.sock"
+export TOR_CONTROL_IPC_PATH="/run/anon-ws-disable-stacked-tor/127.0.0.1_9151.sock"
 
 ## environment variable to skip TorButton control port verification
 ## https://trac.torproject.org/projects/tor/ticket/13079

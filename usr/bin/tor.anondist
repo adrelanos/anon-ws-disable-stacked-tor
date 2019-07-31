@@ -68,8 +68,8 @@ if [ ! "$file_name" = "" ]; then
    SocksPort=${SocksPort#"SocksPort="}
 
    mkdir -p "$DataDirectory"
-   ln -s /var/run/tor/control "$ControlSocket"
-   ln -s /var/run/tor/control.authcookie "$CookieAuthFile"
+   ln -s /run/tor/control "$ControlSocket"
+   ln -s /run/tor/control.authcookie "$CookieAuthFile"
 
    trap exit_handler EXIT
 

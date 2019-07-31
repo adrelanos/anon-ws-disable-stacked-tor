@@ -6,7 +6,7 @@
 [Unit]
 Description=redirect 127.0.0.1:11109 to Whonix-Gateway port 9119
 Documentation=https://www.whonix.org/wiki/Dev/anon-ws-disable-stacked-tor
-ConditionPathExists=!/var/run/qubes/this-is-templatevm
+ConditionPathExists=!/run/qubes/this-is-templatevm
 After=anon-ws-disable-stacked-tor_autogen_port_11109.socket
 Requires=anon-ws-disable-stacked-tor_autogen_port_11109.socket
 
