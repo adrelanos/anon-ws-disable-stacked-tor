@@ -16,7 +16,8 @@ Provides: tor, ${diverted-files}
 Conflicts: ${diverted-files}
 Architecture: all
 ## anon-base-files provides user 'user'.
-Depends: procps, socat, helper-scripts, anon-base-files, ${misc:Depends}
+Depends: procps, socat, helper-scripts, anon-base-files, adduser,
+ ${misc:Depends}
 Description: Prevents Tor over Tor in Anonymity Distribution Workstations
  Supposed to be installed on Workstations, which prevents installing the real
  Tor package from upstream (ex: Debian, The Tor Project) APT repositories. Its
