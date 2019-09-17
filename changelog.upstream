@@ -1,3 +1,21 @@
+commit 536953c4a84902c408d858a67607b2da2eaab85a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 17 07:26:26 2019 +0000
+
+    use --with=config-package rather than dh_configpackage
+
+commit 02839f754c52d54e94d1c068687fffaf7368d45a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Sep 17 07:23:24 2019 +0000
+
+    fix, also run original dh_install from override_dh_install
+
+commit cd20cf2526cc446b511b105830306d4d2200ff54
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 31 13:41:57 2019 +0000
+
+    bumped changelog version
+
 commit 517eef5fe593ef08907310dd698052d32da6d669
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Aug 31 08:43:17 2019 -0400
