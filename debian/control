@@ -32,22 +32,21 @@ Description: Prevents Tor over Tor in Anonymity Distribution Workstations
  This is non-ideal, since for example the torchat package will install Tor, but
  still acceptable, because of the following additional implementations.
  .
- Tor's autostart is disabled in /etc/default/tor (dpkg-diverted using
- config-package-dev), so even if the tor package gets installed, it won't be
- automatically started.
- .
  Binaries eventually installed (by the tor Debian package) /usr/bin/tor as well
  as /usr/sbin/tor are replaced with a dummy wrapper that does nothing
  (dpkg-diverted using config-package-dev).
  .
- socat listens on Tor's default ports. system Tor's 127.0.0.1:9050,
- 127.0.0.1:9051 and TBB's 127.0.0.1:9150, 127.0.0.1:9051, which prevents the
+ systemd-socket-proxyd listens on Tor's default ports. system Tor's
+ 127.0.0.1:9050, 127.0.0.1:9051 and TBB's 127.0.0.1:9150, 127.0.0.1:9051,
+ which prevents the
  default Tor Browser Bundle or Tor package by The Tor Project from opening
  these default ports, which will result in Tor failing to open its listening
  port and therefore exiting, thus preventing Tor over Tor.
  .
  See also:
- https://tor.stackexchange.com/questions/427/is-running-tor-over-tor-dangerous
+ .
+ * https://www.whonix.org/wiki/Dev/anon-ws-disable-stacked-tor
+ * https://tor.stackexchange.com/questions/427/is-running-tor-over-tor-dangerous
  .
  [1] See "7.5 Virtual packages - Provides" on
  http://www.debian.org/doc/debian-policy/ch-relationships.html
