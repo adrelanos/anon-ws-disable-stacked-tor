@@ -27,9 +27,19 @@ configure_function() {
 
    addgroup --quiet debian-tor 2>/dev/null || true
 
+#### meta start
+#### project Whonix
+#### category networking
+#### workstation_only yes
+#### description
+## <code>/etc/X11/Xsession.d/</code> hook to <code>source</code>
+## <code>/usr/lib/anon-ws-disable-stacked-tor/torbrowser.sh</code>
+
    ## Add user "user" to the group "debian-tor", so user "user" can access Tor's control port.
    ## User "user" already exists thanks to the anon-base-files package.
    addgroup --quiet user debian-tor
+
+#### meta end
 }
 
 case "$1" in

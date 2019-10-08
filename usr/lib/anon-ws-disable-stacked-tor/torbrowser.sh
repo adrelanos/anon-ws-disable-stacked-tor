@@ -3,6 +3,15 @@
 ## Copyright (C) 2012 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
+#### meta start
+#### project Whonix
+#### category networking and apps
+#### workstation_only yes
+#### description
+## Environment variables for Tor Browser integration.
+##
+## Prevents Tor over Tor.
+
 ## Deactivate tor-launcher,
 ## a Vidalia replacement as browser extension,
 ## to prevent running Tor over Tor.
@@ -57,3 +66,5 @@ export TOR_SKIP_CONTROLPORTTEST=1
 ## for security reasons forbidden from the Whonix-Gateway.
 ## https://trac.torproject.org/projects/tor/ticket/14100
 export TOR_NO_DISPLAY_NETWORK_SETTINGS=1
+
+#### meta end

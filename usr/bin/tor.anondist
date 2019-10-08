@@ -3,6 +3,16 @@
 ## Copyright (C) 2017 - 2019 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
+#### meta start
+#### project Whonix
+#### category networking and apps
+#### workstation_only yes
+#### description
+## dummy Tor wrapper doing nothing but wait forever and
+##
+## OnionShare support for configuration option "bundled Tor".
+#### meta end
+
 exit_handler() {
    if [ ! "$socat_pid" = "" ]; then
       kill -s sigterm "$socat_pid" || true

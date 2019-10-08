@@ -3,6 +3,31 @@
 ## Copyright (C) 2012 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
+#### meta start
+#### project Whonix
+#### category networking and apps
+#### workstation_only yes
+#### description
+## Generates systemd unit files in
+## <code>/lib/systemd/system/anon-ws-disable-stacked-tor_autogen_*</code> which
+## listen on common local ports used by popular Tor applications such as Tor
+## Browser.
+##
+## Redirect Whonix-Workstation port <code>9050 to Whonix-Gateway port
+## <code>9050</code> and so forth.
+##
+## Create a unix domain socket files such as
+## /run/anon-ws-disable-stacked-tor/127.0.0.1_9050.sock and forward those
+## to $GATEWAY_IP:9150 etc. See also:
+## https://phabricator.whonix.org/T192
+##
+## system Tor default SocksSocket is /run/tor/socks
+## redirect Whonix-Workstation unix domain socket file /run/tor/socks to Whonix-Gateway port 9050
+##
+## Debian /usr/share/tor/tor-service-defaults-torrc uses '/run/tor/control' Tor ControlSocket
+## Redirect Whonix-Workstation unix domain socket file /run/tor/control to Whonix-Gateway port 9051
+#### meta end
+
 ########
 # init #
 ########

@@ -1,6 +1,15 @@
 ## Copyright (C) 2012 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
+#### meta start
+#### project Whonix
+#### category networking
+#### workstation_only yes
+#### description
+## <code>config-package-dev</code> <code>displace</code> the following files:
+
 /etc/default/tor.anondist
 /usr/bin/tor.anondist
 /usr/sbin/tor.anondist
+
+#### meta end

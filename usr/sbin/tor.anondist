@@ -3,6 +3,14 @@
 ## Copyright (C) 2017 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
+#### meta start
+#### project Whonix
+#### category networking
+#### workstation_only yes
+#### description
+## dummy Tor wrapper doing nothing but wait forever.
+#### meta end
+
 sleep infinity &
 wait "$!"
 exit 0
