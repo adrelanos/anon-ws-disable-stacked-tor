@@ -13,7 +13,7 @@
 ## listen on common local ports used by popular Tor applications such as Tor
 ## Browser.
 ##
-## Redirect Whonix-Workstation port <code>9050 to Whonix-Gateway port
+## Redirect Whonix-Workstation port <code>9050</code> to Whonix-Gateway port
 ## <code>9050</code> and so forth.
 ##
 ## Create a unix domain socket files such as
