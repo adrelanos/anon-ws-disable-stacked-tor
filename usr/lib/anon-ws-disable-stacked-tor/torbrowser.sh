@@ -65,6 +65,7 @@ export TOR_SKIP_CONTROLPORTTEST=1
 ## on a workstation, because Tor must be configured on the Whonix-Gateway, which is
 ## for security reasons forbidden from the Whonix-Gateway.
 ## https://trac.torproject.org/projects/tor/ticket/14100
+## https://www.whonix.org/wiki/Tor_Browser/Advanced_Users#Open_Network_Settings
 export TOR_NO_DISPLAY_NETWORK_SETTINGS=1
 
 #### meta end
