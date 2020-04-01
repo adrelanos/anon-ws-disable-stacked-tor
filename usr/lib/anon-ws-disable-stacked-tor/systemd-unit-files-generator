@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Copyright (C) 2012 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## Copyright (C) 2012 - 2020 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
 #### meta start
@@ -112,7 +112,7 @@ mkdir -p usr/share/lintian/overrides
 
 ## Create lintian override file header.
 echo "\
-## Copyright (C) 2017 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## Copyright (C) 2017 - 2020 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
 ## $generated_comment
@@ -147,7 +147,7 @@ for item in $file_port_tuples ; do
    fi
 
    echo "\
-## Copyright (C) 2018 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## Copyright (C) 2018 - 2020 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
 ## $generated_comment
@@ -167,7 +167,7 @@ DirectoryMode=2755
 WantedBy=sockets.target" > "./lib/systemd/system/anon-ws-disable-stacked-tor_autogen_${file_name}.socket"
 
    echo "\
-## Copyright (C) 2018 - 2018 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
+## Copyright (C) 2018 - 2020 ENCRYPTED SUPPORT LP <adrelanos@riseup.net>
 ## See the file COPYING for copying conditions.
 
 ## $generated_comment
