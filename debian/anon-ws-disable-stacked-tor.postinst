@@ -36,7 +36,7 @@ configure_function() {
 ## <code>/usr/lib/anon-ws-disable-stacked-tor/torbrowser.sh</code>
 
    ## Add user "user" to the group "debian-tor", so user "user" can access Tor's control port.
-   ## User "user" already exists thanks to the anon-base-files package.
+   ## User "user" already exists thanks to the dist-base-files package.
    addgroup --quiet user debian-tor
 
 #### meta end

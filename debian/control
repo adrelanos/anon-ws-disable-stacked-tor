@@ -15,8 +15,8 @@ Package: anon-ws-disable-stacked-tor
 Provides: tor, ${diverted-files}
 Conflicts: ${diverted-files}
 Architecture: all
-## anon-base-files provides user 'user'.
-Depends: procps, socat, helper-scripts, anon-base-files, adduser,
+## dist-base-files provides user 'user'.
+Depends: procps, socat, helper-scripts, dist-base-files, adduser,
  ${misc:Depends}
 Description: Prevents Tor over Tor in Anonymity Distribution Workstations
  Supposed to be installed on Workstations, which prevents installing the real
