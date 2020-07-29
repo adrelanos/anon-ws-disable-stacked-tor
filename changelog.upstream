@@ -1,3 +1,23 @@
+commit 26bdf8f4c6a37f6b7243dac87a33e4a645a5a4b5
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jul 29 12:21:28 2020 -0400
+
+    redirect Thunderbird localhost 9102 to Whonix-Gateway 9102
+    
+    https://forums.whonix.org/t/torbirdy-deprecated-replacement-required/8782/27
+
+commit 84a73d18afa706ee39ac51b911c7821c79fad758
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jul 29 12:20:54 2020 -0400
+
+    /var/run -> /run
+
+commit 5b2f06b8b21dfff06098beda8e747b2d0ea61740
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 16 08:22:33 2020 -0400
+
+    bumped changelog version
+
 commit 93b495f4f417202bb113121395db3e99ac26f85e
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Apr 15 14:05:27 2020 -0400
