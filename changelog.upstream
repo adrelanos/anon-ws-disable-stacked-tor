@@ -1,3 +1,27 @@
+commit f065c2223c7a0e957996c227be4f39f1f30e8ca7
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 19 11:37:53 2020 -0400
+
+    readme
+
+commit 865372f58a51a7715b8807f4438c4bdc85d82e43
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 19 11:36:00 2020 -0400
+
+    forward Thunderbird port 9102
+    
+    run usr/share/lintian/overrides/anon-ws-disable-stacked-tor
+    
+    Thanks to @LavenderLevitator for the bug report!
+    
+    https://forums.whonix.org/t/torbirdy-replacement/8782/35
+
+commit c7ad15982c27866747f9bcef0c10c83cacf18b7f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jul 29 12:23:23 2020 -0400
+
+    bumped changelog version
+
 commit 26bdf8f4c6a37f6b7243dac87a33e4a645a5a4b5
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Wed Jul 29 12:21:28 2020 -0400
