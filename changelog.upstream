@@ -1,3 +1,33 @@
+commit 9e0de4bb5a4408b5b32a6b34244ec69570c555a1
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 14 07:51:15 2020 -0500
+
+    comment
+
+commit 9f5e8fe507de7b95c2dbfed49fb848383a5a4241
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 14 07:50:08 2020 -0500
+
+    comment
+
+commit 4636ec017c2ad3f7e189c96d28a5e4e6f0c3be31
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 14 07:49:22 2020 -0500
+
+    comment
+
+commit 542efcdec2217b79567b54f41eed2c27ecaa9eab
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 14 07:43:36 2020 -0500
+
+    comments on IP change; better support to change IPs
+
+commit e21142a0b21ed9b6496d9c53dbf7d3e3a58f11c3
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 19 11:37:54 2020 -0400
+
+    bumped changelog version
+
 commit f065c2223c7a0e957996c227be4f39f1f30e8ca7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Oct 19 11:37:53 2020 -0400
