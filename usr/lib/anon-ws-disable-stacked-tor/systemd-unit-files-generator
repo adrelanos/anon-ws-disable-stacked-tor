@@ -49,11 +49,9 @@ cd ..
 ## Redirect Whonix-Workstation port 9050 to Whonix-Gateway port 9050 and so forth.
 file_port_tuples+=" port#9050:9050 " ## system Tor default SocksPort
 file_port_tuples+=" port#9150:9150 " ## Tor Browser Bundle default SocksPort
-file_port_tuples+=" port#9152:9152 " ## Tor Messenger default SocksPort
 file_port_tuples+=" port#9051:9051 " ## Tor default ControlPort
 file_port_tuples+=" port#9151:9051 " ## Tor Browser Bundle default ControlPort
 file_port_tuples+=" port#9153:9051 " ## Tor Messenger default ControlPort
-file_port_tuples+=" port#11109:9119 " ## TorChat default SocksPort
 file_port_tuples+=" port#9102:9102 " ## Thunderbird
 
 ## Create a unix domain socket files such as
@@ -62,7 +60,6 @@ file_port_tuples+=" port#9102:9102 " ## Thunderbird
 ## https://phabricator.whonix.org/T192
 file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9050.sock#9050 "
 file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9150.sock#9150 "
-file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9152.sock#9152 "
 file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9051.sock#9051 "
 file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9151.sock#9051 "
 file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9153.sock#9051 "
