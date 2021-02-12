@@ -51,7 +51,6 @@ file_port_tuples+=" port#9050:9050 " ## system Tor default SocksPort
 file_port_tuples+=" port#9150:9150 " ## Tor Browser Bundle default SocksPort
 file_port_tuples+=" port#9051:9051 " ## Tor default ControlPort
 file_port_tuples+=" port#9151:9051 " ## Tor Browser Bundle default ControlPort
-file_port_tuples+=" port#9153:9051 " ## Tor Messenger default ControlPort
 file_port_tuples+=" port#9102:9102 " ## Thunderbird
 
 ## Create a unix domain socket files such as
@@ -62,7 +61,6 @@ file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9050.sock#9050 "
 file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9150.sock#9150 "
 file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9051.sock#9051 "
 file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9151.sock#9051 "
-file_port_tuples+=" /run/anon-ws-disable-stacked-tor/127.0.0.1_9153.sock#9051 "
 
 ## system Tor default SocksSocket is /run/tor/socks
 ## redirect Whonix-Workstation unix domain socket file /run/tor/socks to Whonix-Gateway port 9050
