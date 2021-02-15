@@ -1,3 +1,42 @@
+commit 0b1394e98ee2a4c7f56c722585358dff3ea67f61
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Mon Feb 15 09:24:02 2021 -0500
+
+    readme
+
+commit d0154afd9c5ad734ca6bb26644ef69a99c8e9749
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Feb 12 03:46:16 2021 -0500
+
+    lintian
+
+commit 4db39ec46cbbf432ca1e6cbd16562cae2896836b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Feb 12 03:36:57 2021 -0500
+
+    disable the following port forwardings from Whonix-Workstation to Whonix-Gateway
+    
+    - 9153 (Tor Messenger default ControlPort)
+    
+    since deprecated applications in Whonix and no longer in use
+
+commit e6b7b164790058453b495b8b17a9bbeb310363c1
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Fri Feb 12 03:35:13 2021 -0500
+
+    disable the following port forwardings from Whonix-Workstation to Whonix-Gateway
+    
+    - 9152 (Tor Messenger default SocksPort)
+    - 11109 (TorChat default SocksPort)
+    
+    since deprecated applications in Whonix and no longer in use
+
+commit 464189c826736e65fdf3f378ffbaf06cd33f0018
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Nov 14 11:53:40 2020 -0500
+
+    bumped changelog version
+
 commit 9e0de4bb5a4408b5b32a6b34244ec69570c555a1
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Nov 14 07:51:15 2020 -0500
