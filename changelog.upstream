@@ -1,3 +1,23 @@
+commit 73a4e81dee4a2cb5f0453d024d41f20a307802e8
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Jul 7 04:33:00 2021 -0400
+
+    fix "Firefox is offline" messages in Tor Browser 10.5a17 and above by
+    enabling Tor Browser `quickstart`
+    
+    `export TOR_USE_LEGACY_LAUNCHER=1`
+    
+    https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/27476
+    https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/40455
+    https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/40433
+    https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/34345
+
+commit 57c9f0804ed6d1ceee6aa487518659a0fb28f029
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Mar 17 10:56:47 2021 -0400
+
+    bumped changelog version
+
 commit 2157d942aec065dcd6086056a76ffde53f7563ff
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Mar 17 09:45:11 2021 -0400
