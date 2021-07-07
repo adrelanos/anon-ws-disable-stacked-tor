@@ -19,6 +19,14 @@
 ## https://gitweb.torproject.org/tor-launcher.git
 export TOR_SKIP_LAUNCH=1
 
+## tor-launcher is deactivated above but the following is required to avoid
+## "Firefox is offline" messages in Tor Browser 10.5a17 and above.
+## https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/27476
+## https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/40455
+## https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/40433
+## https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/34345
+export TOR_USE_LEGACY_LAUNCHER=1
+
 ## The following TOR_SOCKS_HOST and TOR_SOCKS_PORT variables
 ## do not work flawlessly, due to an upstream bug in Tor Button:
 ##    "TOR_SOCKS_HOST, TOR_SOCKS_PORT regression"
