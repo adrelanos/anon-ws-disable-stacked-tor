@@ -1,3 +1,15 @@
+commit 6ee5b5b03d09dae202f2f55ff603c96dca2bf386
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jul 24 19:04:48 2021 -0400
+
+    Provides: obfsproxy, obfs4proxy
+
+commit b7d7c7e6daa6afab9bcc3b6063970476cb80d3ac
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Wed Jul 7 04:36:34 2021 -0400
+
+    bumped changelog version
+
 commit 73a4e81dee4a2cb5f0453d024d41f20a307802e8
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Wed Jul 7 04:33:00 2021 -0400
