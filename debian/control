@@ -12,7 +12,7 @@ Vcs-Git: https://github.com/Whonix/anon-ws-disable-stacked-tor.git
 Standards-Version: 4.3.0
 
 Package: anon-ws-disable-stacked-tor
-Provides: tor, ${diverted-files}
+Provides: tor, obfsproxy, obfs4proxy, ${diverted-files}
 Conflicts: ${diverted-files}
 Architecture: all
 ## dist-base-files provides user 'user'.
