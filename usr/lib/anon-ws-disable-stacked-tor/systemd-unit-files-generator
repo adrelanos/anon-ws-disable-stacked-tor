@@ -125,7 +125,7 @@ echo "\
 ## $generated_comment
 
 ## Dummy script does not need a man page. Original man page still available.
-anon-ws-disable-stacked-tor: binary-without-manpage usr/sbin/tor.anondist
+anon-ws-disable-stacked-tor: no-manual-page usr/sbin/tor.anondist
 
 ## false positive lintian warning for static systemd unit file
 ## http://lists.alioth.debian.org/pipermail/pkg-systemd-maintainers/2017-March/014380.html
