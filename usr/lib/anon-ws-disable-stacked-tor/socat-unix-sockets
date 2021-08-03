@@ -14,7 +14,7 @@
 set -e
 
 ## Provides variable $GATEWAY_IP so it can be used by `source`d config snippets.
-eval $(/usr/lib/helper-scripts/settings_echo)
+eval $(/usr/libexec/helper-scripts/settings_echo)
 
 ## Process configuration folders. Allows overwriting GATEWAY_IP.
 
