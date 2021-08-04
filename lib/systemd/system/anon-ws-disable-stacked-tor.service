@@ -6,8 +6,8 @@
 #### category networking and apps
 #### workstation_only yes
 #### description
-## Runs <code>/usr/lib/anon-ws-disable-stacked-tor/state-files</code> and
-## <code>/usr/lib/anon-ws-disable-stacked-tor/socat-unix-sockets</code>.
+## Runs <code>/usr/libexec/anon-ws-disable-stacked-tor/state-files</code> and
+## <code>/usr/libexec/anon-ws-disable-stacked-tor/socat-unix-sockets</code>.
 #### meta end
 
 [Unit]
@@ -26,9 +26,9 @@ KillMode=control-group
 SuccessExitStatus=143 125
 RestartPreventExitStatus=125
 PermissionsStartOnly=true
-ExecStartPre=/usr/lib/anon-ws-disable-stacked-tor/state-files
+ExecStartPre=/usr/libexec/anon-ws-disable-stacked-tor/state-files
 User=debian-tor
-ExecStart=/usr/lib/anon-ws-disable-stacked-tor/socat-unix-sockets
+ExecStart=/usr/libexec/anon-ws-disable-stacked-tor/socat-unix-sockets
 
 [Install]
 WantedBy=multi-user.target

@@ -9,9 +9,9 @@
 #### workstation_only yes
 #### description
 ## <code>/etc/profile.d</code> hook to <code>source</code>
-## <code>/usr/lib/anon-ws-disable-stacked-tor/torbrowser.sh</code>
+## <code>/usr/libexec/anon-ws-disable-stacked-tor/torbrowser.sh</code>
 #### meta end
 
-if [ -x /usr/lib/anon-ws-disable-stacked-tor/torbrowser.sh ]; then
-   . /usr/lib/anon-ws-disable-stacked-tor/torbrowser.sh
+if [ -x /usr/libexec/anon-ws-disable-stacked-tor/torbrowser.sh ]; then
+   . /usr/libexec/anon-ws-disable-stacked-tor/torbrowser.sh
 fi
