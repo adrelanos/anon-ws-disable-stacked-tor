@@ -1,3 +1,25 @@
+commit 7a1e0b59d39bc705c1e39be69a2c3dedb04c0f04
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jan 15 15:28:41 2022 -0500
+
+    implement `tor --verify-config`
+    
+    tor-ctrl uses 'tor --verify-config'
+    
+    fixes https://github.com/nyxnor/tor-ctrl/issues/9
+
+commit 673ff1807649d753f937298f2a3ad83556ce85e8
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Tue Nov 9 14:32:28 2021 -0500
+
+    readme
+
+commit 31fcadcf1f54f9c1b8e447deb31e381dc135e810
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Sep 11 18:33:39 2021 -0400
+
+    bumped changelog version
+
 commit 7494cc99bf640b63bcde1be2be239334f134790d
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Sep 11 16:31:08 2021 -0400
