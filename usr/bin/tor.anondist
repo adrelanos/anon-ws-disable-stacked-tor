@@ -28,7 +28,7 @@ exit_handler() {
 set -e
 
 verify_config() {
-   /usr/bin/tor.anondist-orig --verify-config
+   /usr/bin/tor.anondist-orig "${args[@]}"
    exit "$?"
 }
 
@@ -36,6 +36,9 @@ verify_config() {
 #set -x
 #exec 5>&1 1>> /home/user/toroutput
 #exec 6>&2 2>> /home/user/toroutput
+
+args=("$@")
+true "args: ${args[@]}"
 
 file_name=""
 DataDirectory=""
