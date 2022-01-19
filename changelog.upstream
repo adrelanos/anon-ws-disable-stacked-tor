@@ -1,3 +1,17 @@
+commit e6c05d99006849caf4326d58d4cca4cb0e001c1b
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sun Jan 16 12:10:48 2022 -0500
+
+    Tor emulation: fix, pass all command line options to `tor` when being called with `--verify-config`
+    
+    https://github.com/nyxnor/tor-ctrl/issues/9
+
+commit 8b34a274e458feb17d2cf8002e2853703e174860
+Author: Patrick Schleizer <adrelanos@whonix.org>
+Date:   Sat Jan 15 15:29:27 2022 -0500
+
+    bumped changelog version
+
 commit 7a1e0b59d39bc705c1e39be69a2c3dedb04c0f04
 Author: Patrick Schleizer <adrelanos@whonix.org>
 Date:   Sat Jan 15 15:28:41 2022 -0500
