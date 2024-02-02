@@ -5,7 +5,7 @@ Source: anon-ws-disable-stacked-tor
 Section: misc
 Priority: optional
 Maintainer: Patrick Schleizer <adrelanos@whonix.org>
-Build-Depends: debhelper (>= 13), debhelper-compat (= 13), config-package-dev
+Build-Depends: debhelper (>= 13.11.6), debhelper-compat (= 13), config-package-dev
 Homepage: https://github.com/Whonix/anon-ws-disable-stacked-tor
 Vcs-Browser: https://github.com/Whonix/anon-ws-disable-stacked-tor
 Vcs-Git: https://github.com/Whonix/anon-ws-disable-stacked-tor.git
