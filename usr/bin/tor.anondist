@@ -56,8 +56,8 @@ verify_config() {
 ## Debugging.
 ## TODO: disable
 set -x
-exec 5>&1 1>> /home/user/toroutput
-exec 6>&2 2>> /home/user/toroutput
+exec 5>&1 1>> ~/toroutput
+exec 6>&2 2>> ~/toroutput
 
 args=("$@")
 true "args: ${args[@]}"
@@ -147,8 +147,8 @@ fi
 if echo "$file_name" | grep --quiet --ignore-case "Bisq" ; then
    ## Emulate creation of Tor debug.log that Bisq is waiting for.
    ## https://github.com/bisq-network/bisq2/issues/1894#issuecomment-2016924749
-   mkdir --parents /home/user/.local/share/Bisq2/tor/
-   touch /home/user/.local/share/Bisq2/tor/debug.log
+   mkdir --parents ~/.local/share/Bisq2/tor/
+   touch ~/.local/share/Bisq2/tor/debug.log
 fi
 
 sleep infinity &
