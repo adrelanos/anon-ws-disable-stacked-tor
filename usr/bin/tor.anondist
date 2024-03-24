@@ -148,7 +148,11 @@ if echo "$file_name" | grep --quiet --ignore-case "Bisq" ; then
    ## Emulate creation of Tor debug.log that Bisq is waiting for.
    ## https://github.com/bisq-network/bisq2/issues/1894#issuecomment-2016924749
    mkdir --parents ~/.local/share/Bisq2/tor/
-   touch ~/.local/share/Bisq2/tor/debug.log
+   echo "
+Emulated log file created by: $0
+
+Mar 24 20:12:35.477 [notice] Opened Control listener connection (ready) on 127.0.0.1:${ControlPort}
+" | tee ~/.local/share/Bisq2/tor/debug.log >/dev/null
 fi
 
 sleep infinity &
