@@ -11,11 +11,26 @@
 ## dummy Tor wrapper doing nothing but wait forever and
 ##
 ## OnionShare support for configuration option "bundled Tor".
+##
+## Bisq support.
 #### meta end
 
 ## Bisq runs Tor which it installs to /home/user/.local/share/Bisq2/tor/tor
 ## with the following command line options:
 ## -f /home/user/.local/share/Bisq2/tor/torrc __OwningControllerProcess 8581
+##
+# cat /home/user/.local/share/Bisq2/tor/torrc
+# HashedControlPassword 16:9A4EA39F06ADB2F5609AFF1EC4784C1F03AA25713D0E828D731E657B16
+# ControlPort 127.0.0.1:43649
+# Log notice file /home/user/.local/share/Bisq2/tor/debug.log
+# DataDirectory /home/user/.local/share/Bisq2/tor
+# SocksPort 43677
+# DisableNetwork 1
+##
+# sudo cat /run/tor/control.txt
+# PORT=127.0.0.1:9052
+# PORT=127.0.0.1:44343
+# UNIX_PORT=/run/tor/control
 
 exit_handler() {
    if [ ! "$socat_pid_list" = "" ]; then
@@ -127,6 +142,13 @@ if [ ! "$file_name" = "" ]; then
       socat TCP-LISTEN:"$SocksPort",fork,bind=127.0.0.1 TCP:127.0.0.1:9050 &
       socat_pid_list+=" $!"
    fi
+fi
+
+if echo "$file_name" | grep --quiet --ignore-case "Bisq" ; then
+   ## Emulate creation of Tor debug.log that Bisq is waiting for.
+   ## https://github.com/bisq-network/bisq2/issues/1894#issuecomment-2016924749
+   mkdir --parents /home/user/.local/share/Bisq2/tor/
+   touch /home/user/.local/share/Bisq2/tor/debug.log
 fi
 
 sleep infinity &
