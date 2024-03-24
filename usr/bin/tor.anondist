@@ -13,6 +13,10 @@
 ## OnionShare support for configuration option "bundled Tor".
 #### meta end
 
+## Bisq runs Tor which it installs to /home/user/.local/share/Bisq2/tor/tor
+## with the following command line options:
+## -f /home/user/.local/share/Bisq2/tor/torrc __OwningControllerProcess 8581
+
 exit_handler() {
    if [ ! "$socat_pid" = "" ]; then
       kill -s sigterm "$socat_pid" || true
