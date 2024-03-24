@@ -63,6 +63,10 @@ do
             verify_config
             shift
             ;;
+         --version)
+            exec /usr/bin/tor.anondist-orig --version
+            shift
+            ;;
          --)
             shift
             break
